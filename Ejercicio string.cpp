@@ -1,3 +1,7 @@
+/*Autores:
+	Miguel Angelo Rodriguez Montano
+	Sebastian Fernando De La Quintana*/
+
 #include <iostream>
 #include <conio.h>
 #include "cadena.h"
