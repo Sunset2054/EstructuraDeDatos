@@ -1,3 +1,8 @@
+/*Autores:
+	Miguel Angelo Rodriguez Montano
+	Sebastian Fernando De La Quintana*/
+
+
 #include <iostream>
 using namespace std;
 class cadena
