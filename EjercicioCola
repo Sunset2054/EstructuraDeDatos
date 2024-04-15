@@ -1,0 +1,11 @@
+#include <iostream>
+#include "Cola.h"
+int main()
+{
+	Cola pila;
+	pila.anadirpedido();
+	pila.anadirpedido();
+	pila.pedidoentregado();
+	pila.mostrarordenes();
+
+}
