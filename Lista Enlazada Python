@@ -1,0 +1,34 @@
+class Nodo:
+    def __init__(self, dato):
+        self.dato = dato
+        self.siguiente = None
+
+class ListaEnlazada:
+    def __init__(self):
+        self.cabeza = None
+
+    def insertar_al_principio(self, dato):
+        nuevo_nodo = Nodo(dato)
+        nuevo_nodo.siguiente = self.cabeza
+        self.cabeza = nuevo_nodo
+
+    def imprimir_lista(self):
+        actual = self.cabeza
+        while actual:
+            print(actual.dato, end=" -> ")
+            actual = actual.siguiente
+        print("None")
+#retirar al inicio
+    def retirar_inicio(self):
+        if not self.cabeza:
+            print ("La lista está vacía")
+        nod = self.cabeza
+        self.cabeza = self.cabeza.siguiente
+        return nod.dato
+# Ejemplo de uso
+lista = ListaEnlazada()
+lista.insertar_al_principio(3)
+lista.insertar_al_principio(7)
+lista.insertar_al_principio(11)
+print(lista.retirar_inicio())
+lista.imprimir_lista()
